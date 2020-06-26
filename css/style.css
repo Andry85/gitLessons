@@ -57,6 +57,7 @@ table {
 
 .page__col {
     flex-basis: 40%;
+    padding: 20px;
 }
 
 .page--title {
