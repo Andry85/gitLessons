@@ -83,3 +83,65 @@ var chart = new Chart(ctx1, {
 
 
 }
+
+class Bird {
+	
+	
+	constructor(options) {
+		this.wings = options.wings;
+		this.lags = options.lags;
+		this.color = options.color;
+		this._weight = options.weight;
+		
+	}
+	
+	countWings() {
+		console.log(this.wings);
+		console.log(this.lags);
+		console.log(this.color);
+	}
+	
+	get weight() {
+		return this._weight;
+	}
+	
+	set weight(v) {
+		this._weight = v;
+	}
+}
+
+let dug = new Bird({
+	wings: 2,
+	lags: 2,
+	color: 'white',
+	weight: 5
+});
+
+
+
+class HouseBird extends Bird {
+	constructor(options, eating) {
+		super(options);
+		this.meel = eating.meel;
+	}
+}
+
+let chicken = new HouseBird({
+	wings: 2,
+	lags: 2,
+	color: 'blue',
+}, {
+	meel: 'wheat'
+});
+
+
+function run(a) {
+	console.log(a+b);
+	b=a;
+}
+
+run(6);
+
+
+
+
