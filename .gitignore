@@ -2,3 +2,7 @@
 img/
 .idea/
 readme.txt
+*.exe
+!1.exe
+/2.bmp
+doc/**/*.txt
